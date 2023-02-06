@@ -1,0 +1,9 @@
+{
+	"name": "Enterprise-Survey-2021",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "746b6eaf-2626-452e-b032-f4e8a830608f",
+		"tenantId": "8ee3fdf7-dc0e-4d3e-bc5e-3f2bb983de9f"
+	}
+}
