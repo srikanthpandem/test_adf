@@ -1,0 +1,10 @@
+{
+	"name": "test2916_db",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=test2916.database.windows.net;Initial Catalog=test2916"
+		}
+	}
+}
