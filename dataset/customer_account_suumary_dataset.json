@@ -1,0 +1,16 @@
+{
+	"name": "customer_account_suumary_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "az_db_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "crm_data"
+		}
+	}
+}

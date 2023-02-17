@@ -1,0 +1,688 @@
+{
+	"name": "customer_account_summary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_sql_database",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Accounts_Salesforce _Prod.csv",
+				"container": "demo3000"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Id",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "LastName",
+				"type": "String"
+			},
+			{
+				"name": "FirstName",
+				"type": "String"
+			},
+			{
+				"name": "Salutation",
+				"type": "String"
+			},
+			{
+				"name": "MiddleName",
+				"type": "String"
+			},
+			{
+				"name": "Suffix",
+				"type": "String"
+			},
+			{
+				"name": "Type",
+				"type": "String"
+			},
+			{
+				"name": "RecordTypeId",
+				"type": "String"
+			},
+			{
+				"name": "ParentId",
+				"type": "String"
+			},
+			{
+				"name": "Phone",
+				"type": "String"
+			},
+			{
+				"name": "Fax",
+				"type": "String"
+			},
+			{
+				"name": "AccountNumber",
+				"type": "String"
+			},
+			{
+				"name": "Website",
+				"type": "String"
+			},
+			{
+				"name": "Sic",
+				"type": "String"
+			},
+			{
+				"name": "Industry",
+				"type": "String"
+			},
+			{
+				"name": "AnnualRevenue",
+				"type": "String"
+			},
+			{
+				"name": "NumberOfEmployees",
+				"type": "String"
+			},
+			{
+				"name": "Ownership",
+				"type": "String"
+			},
+			{
+				"name": "TickerSymbol",
+				"type": "String"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			},
+			{
+				"name": "Rating",
+				"type": "String"
+			},
+			{
+				"name": "Site",
+				"type": "String"
+			},
+			{
+				"name": "PersonContactId",
+				"type": "String"
+			},
+			{
+				"name": "IsPersonAccount",
+				"type": "String"
+			},
+			{
+				"name": "PersonEmail",
+				"type": "String"
+			},
+			{
+				"name": "PersonHasOptedOutOfEmail",
+				"type": "String"
+			},
+			{
+				"name": "PersonHasOptedOutOfFax",
+				"type": "String"
+			},
+			{
+				"name": "PersonDoNotCall",
+				"type": "String"
+			},
+			{
+				"name": "PersonLastCURequestDate",
+				"type": "String"
+			},
+			{
+				"name": "PersonLastCUUpdateDate",
+				"type": "String"
+			},
+			{
+				"name": "PersonEmailBouncedReason",
+				"type": "String"
+			},
+			{
+				"name": "PersonEmailBouncedDate",
+				"type": "String"
+			},
+			{
+				"name": "PersonIndividualId",
+				"type": "String"
+			},
+			{
+				"name": "Jigsaw",
+				"type": "String"
+			},
+			{
+				"name": "JigsawCompanyId",
+				"type": "String"
+			},
+			{
+				"name": "AccountSource",
+				"type": "String"
+			},
+			{
+				"name": "SicDesc",
+				"type": "String"
+			},
+			{
+				"name": "Customer_Number__c",
+				"type": "String"
+			},
+			{
+				"name": "Organization_Name__c",
+				"type": "String"
+			},
+			{
+				"name": "Celebrity__c",
+				"type": "String"
+			},
+			{
+				"name": "GC_Number__c",
+				"type": "String"
+			},
+			{
+				"name": "Birthday__c",
+				"type": "String"
+			},
+			{
+				"name": "Product_Notes__c",
+				"type": "String"
+			},
+			{
+				"name": "Notes__c",
+				"type": "String"
+			},
+			{
+				"name": "Classification__c",
+				"type": "String"
+			},
+			{
+				"name": "Account__c",
+				"type": "String"
+			},
+			{
+				"name": "Email_Send__c",
+				"type": "String"
+			},
+			{
+				"name": "All_Visited__c",
+				"type": "String"
+			},
+			{
+				"name": "Image_URL__c",
+				"type": "String"
+			},
+			{
+				"name": "Image__c",
+				"type": "String"
+			},
+			{
+				"name": "Lead__c",
+				"type": "String"
+			},
+			{
+				"name": "Salesrep__c",
+				"type": "String"
+			},
+			{
+				"name": "PersonContactId__c",
+				"type": "String"
+			},
+			{
+				"name": "Organization_Test__c",
+				"type": "String"
+			},
+			{
+				"name": "General_Sizes__c",
+				"type": "String"
+			},
+			{
+				"name": "Filled_out_Test__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest1__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest2__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest3__c",
+				"type": "String"
+			},
+			{
+				"name": "Pants_Size__c",
+				"type": "String"
+			},
+			{
+				"name": "Preferred_Bandss__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest4__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest5__c",
+				"type": "String"
+			},
+			{
+				"name": "Madison_Avenue_Lead__c",
+				"type": "String"
+			},
+			{
+				"name": "Spend_18_months__c",
+				"type": "String"
+			},
+			{
+				"name": "Outreach__c",
+				"type": "String"
+			},
+			{
+				"name": "Favoite_Color__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest6__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest7__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest8__c",
+				"type": "String"
+			},
+			{
+				"name": "LTV2__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest9__c",
+				"type": "String"
+			},
+			{
+				"name": "Spend_This_Year__c",
+				"type": "String"
+			},
+			{
+				"name": "Favorite_Designer__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest10__c",
+				"type": "String"
+			},
+			{
+				"name": "Outreach2__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest11__c",
+				"type": "String"
+			},
+			{
+				"name": "Percent_Test8__c",
+				"type": "String"
+			},
+			{
+				"name": "Percent_Test9__c",
+				"type": "String"
+			},
+			{
+				"name": "Percent_Test10__c",
+				"type": "String"
+			},
+			{
+				"name": "Percent_Test11__c",
+				"type": "String"
+			},
+			{
+				"name": "Profile_Completion__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest12__c",
+				"type": "String"
+			},
+			{
+				"name": "European_Sizes__c",
+				"type": "String"
+			},
+			{
+				"name": "US_Sizes__c",
+				"type": "String"
+			},
+			{
+				"name": "CheboxTest13__c",
+				"type": "String"
+			},
+			{
+				"name": "Stylist_Roll__c",
+				"type": "String"
+			},
+			{
+				"name": "GC_Amount__c",
+				"type": "String"
+			},
+			{
+				"name": "Email_Opt_in__c",
+				"type": "String"
+			},
+			{
+				"name": "Active__c",
+				"type": "String"
+			},
+			{
+				"name": "Product_Request_Details__c",
+				"type": "String"
+			},
+			{
+				"name": "WGACA_Employee__c",
+				"type": "String"
+			},
+			{
+				"name": "First_Transaction__c",
+				"type": "String"
+			},
+			{
+				"name": "GC_Used__c",
+				"type": "String"
+			},
+			{
+				"name": "Employee_Location__c",
+				"type": "String"
+			},
+			{
+				"name": "GC__c",
+				"type": "String"
+			},
+			{
+				"name": "Divisiion__c",
+				"type": "String"
+			},
+			{
+				"name": "WEB_GC__c",
+				"type": "String"
+			},
+			{
+				"name": "Icon_Status_MC__c",
+				"type": "String"
+			},
+			{
+				"name": "INVITED__c",
+				"type": "String"
+			},
+			{
+				"name": "Uninvited__c",
+				"type": "String"
+			},
+			{
+				"name": "First_Transactions__c",
+				"type": "String"
+			},
+			{
+				"name": "GM__c",
+				"type": "String"
+			},
+			{
+				"name": "GM_PERCENT__c",
+				"type": "String"
+			},
+			{
+				"name": "cost_average__c",
+				"type": "String"
+			},
+			{
+				"name": "Unsubscribed__c",
+				"type": "String"
+			},
+			{
+				"name": "Date_Last_Test__c",
+				"type": "String"
+			},
+			{
+				"name": "Last_Purchase__c",
+				"type": "String"
+			},
+			{
+				"name": "Spend_in_Last_18_Months__c",
+				"type": "String"
+			},
+			{
+				"name": "Spend_the_18_Months_Prior__c",
+				"type": "String"
+			},
+			{
+				"name": "Transaction_count_18_Months__c",
+				"type": "String"
+			},
+			{
+				"name": "Transaction_count_18_Months_Prior__c",
+				"type": "String"
+			},
+			{
+				"name": "Store2__c",
+				"type": "String"
+			},
+			{
+				"name": "Spend_on_18_months__c",
+				"type": "String"
+			},
+			{
+				"name": "IMAGE2__c",
+				"type": "String"
+			},
+			{
+				"name": "First_Store__c",
+				"type": "String"
+			},
+			{
+				"name": "Icon__c",
+				"type": "String"
+			},
+			{
+				"name": "Icon_2__c",
+				"type": "String"
+			},
+			{
+				"name": "Image_Icon__c",
+				"type": "String"
+			},
+			{
+				"name": "Icon_3__c",
+				"type": "String"
+			},
+			{
+				"name": "Nearest_Store__c",
+				"type": "String"
+			},
+			{
+				"name": "text_zip__c",
+				"type": "String"
+			},
+			{
+				"name": "First_Date_Time__c",
+				"type": "String"
+			},
+			{
+				"name": "One_time_Client__c",
+				"type": "String"
+			},
+			{
+				"name": "Project__c",
+				"type": "String"
+			},
+			{
+				"name": "latitude12__c",
+				"type": "String"
+			},
+			{
+				"name": "geo_lat__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__CustomerPriority__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__IndexedAccountNumber__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__NumberofLocations__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__Rootstock_Customer__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__Rootstock_Povend__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__Rootstock_Socust__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__Rootstock_Vendor__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__SLAExpirationDate__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__SLASerialNumber__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__SLA__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__UpsellOpportunity__c",
+				"type": "String"
+			},
+			{
+				"name": "rstk__triggeroptions__c",
+				"type": "String"
+			},
+			{
+				"name": "SoHo_Distance__c",
+				"type": "String"
+			},
+			{
+				"name": "Zip_Geo__c",
+				"type": "String"
+			},
+			{
+				"name": "Zip_Number__c",
+				"type": "String"
+			},
+			{
+				"name": "First_Transaction_Date__c",
+				"type": "String"
+			},
+			{
+				"name": "Social_Media_Proactive__c",
+				"type": "String"
+			},
+			{
+				"name": "Social_Media_Reactive__c",
+				"type": "String"
+			},
+			{
+				"name": "Rank_in_Handbag_Department__c",
+				"type": "String"
+			},
+			{
+				"name": "J_Send__c",
+				"type": "String"
+			},
+			{
+				"name": "First_is_null__c",
+				"type": "String"
+			},
+			{
+				"name": "Number_of_Transactions__c",
+				"type": "String"
+			},
+			{
+				"name": "Chanel_Send_Madison__c",
+				"type": "String"
+			},
+			{
+				"name": "Last_Purcahse_After_BF__c",
+				"type": "String"
+			},
+			{
+				"name": "Black_Friday_Send__c",
+				"type": "String"
+			},
+			{
+				"name": "Rootstock_Project__c",
+				"type": "String"
+			},
+			{
+				"name": "Shopped_after_BF__c",
+				"type": "String"
+			},
+			{
+				"name": "Age__c",
+				"type": "String"
+			},
+			{
+				"name": "Sweepstakes_Client__c",
+				"type": "String"
+			},
+			{
+				"name": "All_Sweepstakes_Clients__c",
+				"type": "String"
+			},
+			{
+				"name": "Square_Customer_ID__c",
+				"type": "String"
+			},
+			{
+				"name": "Email__c",
+				"type": "String"
+			},
+			{
+				"name": "Links__c",
+				"type": "String"
+			},
+			{
+				"name": "Person_Contact__c",
+				"type": "String"
+			},
+			{
+				"name": "LTV__c",
+				"type": "String"
+			},
+			{
+				"name": "Is_Stylist__c",
+				"type": "String"
+			},
+			{
+				"name": "Web_Customer__c",
+				"type": "String"
+			},
+			{
+				"name": "Retail_Customer__c",
+				"type": "String"
+			}
+		]
+	}
+}
